@@ -1,0 +1,156 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family:Arial,sans-serif;
+    background: #f4f6f8;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.todo-container {
+    width:100%;
+    max-width:500px;
+
+    background: white;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px20px rgba(0,0,0,0.1);
+}
+ h1 {
+    text-align:center;
+    margin-bottom:25px;
+    color:#222;
+ }
+
+ .todo-input {
+display:flex;
+gap:10px;
+ }
+
+ .todo-input input {
+    flex:1;
+
+    padding:12px;
+
+    border:1px solid #ddd;
+    border-radius:6px;
+
+    font-size:16px;
+
+    outline:none;
+ }
+
+ .todo-input button {
+    padding:12px 20px;
+
+    border:none;
+    border-radius:6px;
+    
+background: #007bff;
+color:white;
+
+cursor:pointer;
+
+font-size:16px;
+ }
+ .todo-input button:hover {
+    background:#0056b3;
+ }
+
+ #todoList {
+    list-style: none;
+    margin-top:25px;
+ }
+.todo-item {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:12px;
+
+    margin-bottom:10px;
+
+    background: #f8f9fa;
+
+    border-radius:6px;
+}
+
+.todo-content {
+    display: flex;
+    align-item:center;
+    gap:10px;
+
+    flex:1;
+}
+
+.todo-content span{
+    font-size:16px;
+    color:#333;
+}
+
+.todo-content span.completed {
+    text-decoration:line-through;
+    color:#999;
+
+}
+
+.delete-btn {
+    border:none;
+
+    background: #dc3545;
+    color:white;
+
+    padding:7px 12px;
+
+    border-radius:5px;
+
+    cursor:pointer;
+}
+ 
+.delete-btn:hover {
+    background: #b02a37;
+}
+
+.todo-footer {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-top:20px;
+     
+    padding-top:15px;
+
+    border-top:1px solid #eee;
+}
+
+#taskCount {
+    color:#555;
+}
+
+#clearBtn {
+    border:none;
+
+    background:#333;
+    color:white;
+
+    padding:8px 12px;
+
+    border-radius: 5px;
+
+    cursor:pointer;
+
+}
+ #clearbtn:hover {
+    background: #111;
+ }
